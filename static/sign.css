@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: rgb(222, 255, 173);
+}
+main form{
+    display:flex;
+    flex-direction: column;
+    margin:16px;
+    padding:32px;
+    gap:16px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+header h1{
+    color:rgb(114, 9, 67);
+    text-align: left;
+    padding: 8px 32px;
+    margin-top: 32px;
+}
+label{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size:18px;
+    display:block;
+}
+input,textarea,select{
+    width:400px;
+    padding:16px;
+    border:1px solid #555;
+}
+input:hover , textarea:hover , select:hover{
+    border:2px solid indigo;
+}
+select{
+    font-size: 12px;
+    color:blue;
+}
+a{
+    font-size:20px;
+    text-decoration: none;
+    margin-top: 16px;
+    background-color: rgb(68, 4, 39);
+    padding:8px 16px;
+    border:2px solid #555;
+    color:white;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding books to the bookstore</title>
+    <link rel="stylesheet" href="/static/cart.css">
+</head>
+<body>
+    <header>
+        <h1>Your shopping cart </h1>
+    </header>
+    <section class="fifth">
+        {% for number in range(0,count) %}
+        <article>
+            <img src={{cover[number]}}
+            alt="cover"/>
+            <p><strong> Book name : {{name[number]}} </strong></p>
+            <p><strong> Book price : {{price[number]}} </strong></p>
+            <p><strong> Book category : {{category[number]}} </strong></p>
+        </article>
+        {% endfor %}
+        {{count}}
+        </section>
+    <div>
+   <a href="/home">Go back to homepage</a>
+    </div>
+</body>
+</html>
